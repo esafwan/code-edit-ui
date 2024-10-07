@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-size: 14px;
+}
+
+.line-numbers .token-line {
+  counter-increment: line;
+}
+
+.line-numbers .token-line::before {
+  content: counter(line);
+  display: inline-block;
+  width: 2em;
+  text-align: right;
+  margin-right: 1em;
+  color: #606060;
+  user-select: none;
+}
